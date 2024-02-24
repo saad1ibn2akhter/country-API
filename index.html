@@ -31,32 +31,37 @@
 </head>
 <body class="font">
     <main class="container mx-auto">
-        <section class="flex justify-center items-center mt-12 p-10">
+        <section class="flex justify-center items-center mt-3 p-3 sm:mt-12 sm:p-10">
             <!-- main div -->
-            <div class="p-10 text-center items-center bg-gray-100">
+            <div class="p-3 text-center items-center bg-gray-100 sm:p-10">
                 <div class="flex space-x-5 pb-5 items-center">
-                    <input type="text" id="search" class="p-4 rounded-lg">
+                    <input type="text" id="search" class="p-2 rounded-lg sm:p-4">
                     <button id="search-btn" class="btn btn-ghost">Search</button>
                 </div>
                 <div id="image-container" class="text-center flex justify-center" ></div>
-                <h1 id="name" class="text-[18px] font-bold pt-2 pb-1"></h1>
-                <h1 id="official-name" class="text-[17px] font-medium pb-3"></h1>
+                <h1 id="name" class="text-[14px] font-bold pt-2 pb-1 sm:text-[18px]"></h1>
+                <h1 id="official-name" class="text-[13px] font-medium pb-3 sm:text-[17px]"></h1>
                 <div class="text-left">
-                    <div class="flex space-x-4">
-                        <h1 class="font-medium">Capital : </h1><h1 id="capital"></h1>
+                    <div class="flex space-x-1 sm:space-x-4">
+                        <h1 class="font-medium">Capital : </h1>
+                        <h1 id="capital"></h1>
                     </div>
-                    <div class="flex space-x-4">
-                        <h1 class="font-medium">Sub-Continent : </h1><h1 id="sub-continent"></h1>
+                    <div class="flex space-x-1 sm:space-x-4">
+                        <h1 class="font-medium">Continent : </h1>
+                        <h1 id="sub-continent"></h1>
                     </div>
-                    <div class="flex space-x-4">
-                        <h1 class="font-medium">Language : </h1><h1 id="language"></h1>
+                    <div class="flex space-x-1 sm:space-x-4">
+                        <h1 class="font-medium">Language : </h1>
+                        <h1 id="language"></h1>
                     </div>
-                    <div class="flex space-x-4">
-                        <h1 class="font-medium">Population in number :</h1><h1 id="population"></h1>
+                    <div class="flex space-x-1 sm:space-x-4">
+                        <h1 class="font-medium">Population in number :</h1>
+                        <h1 id="population"></h1>
+                    </div>
+                    <div>
+                        <h1 id="linkTo" class="link link-primary"></h1>
                     </div>
                 </div>
-                
-
             </div>
         </section>
     </main>

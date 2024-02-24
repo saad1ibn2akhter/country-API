@@ -35,7 +35,7 @@ async function getCountry() {
                 million = parseInt(population/1000000);
                 thousands = parseInt((population % 1000000) / 1000);
             }
-            document.getElementById('population').innerText =+million + "  million  , " + thousands +"  thousands" ;
+            document.getElementById('population').innerText =+million + " million , " + thousands +" thousands" ;
             
 
             const name = data[0].name.common;

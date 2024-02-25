@@ -8,8 +8,7 @@ async function getCountry() {
             const response = await fetch(`https://restcountries.com/v3.1/name/${text}?fullText=true`);
             const data = await response.json();
 
-            const response2 = await fetch(`https://restcountries.com/v3.1/name/${text}?fullText=true`);
-            const info = await response2.json();
+            
             
             const capital = data[0].capital[0];
             document.getElementById('capital').innerText = capital;
@@ -67,6 +66,15 @@ async function getCountry() {
             document.getElementById('linkTo').innerHTML =
             `<a href="https://en.wikipedia.org/wiki/${name}">Learn More </a>`;
             console.log(capital, subContinent, officialName, languages, population,area,time,map);
+
+            const response2 = await fetch(`https://api.openweathermap.org/data/2.5/weather?units=metric&q=${capital}&appid=cdc1b9191464e59cb545d46186dd4cb8`);
+            const info = await response2.json();
+
+            const avgTemp = info.main.temp;
+            document.getElementById('avgtemp').innerText = avgTemp +'  C*' ;
+            console.log(info);
+
+
             console.log(data);
         } catch (error) {
             console.error('Error:', error);

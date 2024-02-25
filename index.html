@@ -34,11 +34,16 @@
         <section class="flex justify-center items-center mt-3 p-3 sm:mt-12 sm:p-10">
             <!-- main div -->
             <div class="p-3 text-center items-center bg-gray-100 sm:p-10" style="background-image: url(majestic-mountain-peak-tranquil-meadow-panoramic-landscape-generated-by-ai.jpg); background-position: center; -webkit-background-composite: inherit;">
-                <div class="flex space-x-5 pb-5 items-center ">
-                    <input type="text" id="search" class="p-2 rounded-lg sm:p-4">
-                    <button id="search-btn" class="btn btn-ghost">Search</button>
+                <!-- project title -->
+                <div class="flex justify-center">
+                    <div class="flex space-x-5 pb-5 items-center ">
+                        <input placeholder="Type Country Name" type="text" id="search" class="p-2 rounded-lg sm:p-4">
+                        <button id="search-btn" class="btn btn-ghost">Search</button>
+                    </div>
                 </div>
+                
                 <div id="image-container" class="text-center flex justify-center text-white" ></div>
+                <div id="pic-container" class=" flex justify-center text-center mx-auto items-center -translate-y-10 text-white h-[64px] w-[64px]"></div>
                 <h1 id="name" class="text-[14px] font-bold pt-2 pb-1 sm:text-[18px] text-white"></h1>
                 <h1 id="official-name" class="text-[13px] font-medium pb-3 sm:text-[17px] text-white"></h1>
                 <div class="text-left text-white">
@@ -78,6 +83,7 @@
                         <h1 class="font-medium">Average Current Temparature :  </h1>
                         <h1 class="text-right" id="avgtemp"></h1>
                     </div>
+                    <div class="" id="img-container"></div>
                     <div>
                         <h1 id="linkTo" class="link link-primary" ></h1>
                     </div>

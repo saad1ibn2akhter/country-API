@@ -46,6 +46,10 @@ async function getCountry() {
             document.getElementById('image-container').innerHTML = 
             `<img src="${flag}" class="rounded-lg"> </img>`;
 
+            const nation = data[0].coatOfArms.png;
+            document.getElementById('pic-container').innerHTML =
+            `<img src="${nation}" class="rounded-lg"> </img>`;
+
             const area = data[0].area;
             document.getElementById('area').innerText = area;
 
@@ -73,6 +77,11 @@ async function getCountry() {
             const avgTemp = info.main.temp;
             document.getElementById('avgtemp').innerText = avgTemp +'  C*' ;
             console.log(info);
+
+            const response3 = await fetch(`https://api.api-ninjas.com/v1/randomimage?category=nature`);
+            // <img src="https://random.imagecdn.app/500/150">
+            document.getElementById('img-container').innerHTML=``;
+            console.log(response3);
 
 
             console.log(data);

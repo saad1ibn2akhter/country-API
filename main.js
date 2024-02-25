@@ -6,8 +6,10 @@ async function getCountry() {
 
         try {
             const response = await fetch(`https://restcountries.com/v3.1/name/${text}?fullText=true`);
-           
             const data = await response.json();
+
+            const response2 = await fetch(`https://restcountries.com/v3.1/name/${text}?fullText=true`);
+            const info = await response2.json();
             
             const capital = data[0].capital[0];
             document.getElementById('capital').innerText = capital;
@@ -44,10 +46,27 @@ async function getCountry() {
             const flag = data[0].flags.png;
             document.getElementById('image-container').innerHTML = 
             `<img src="${flag}" class="rounded-lg"> </img>`;
+
+            const area = data[0].area;
+            document.getElementById('area').innerText = area;
+
+            const time  = data[0].timezones;
+            const times = Object.values(time);
+            document.getElementById('time').innerText = times[0];
+
+            const currenncy = data[0].currencies;
+            const c = Object.values(currenncy) ;
+            const cur = Object.values(c);
+
+            document.getElementById('currency').innerText = cur[0] +'  ' + cur[1];
+
+            const map = data[0].maps.googleMaps;
+            document.getElementById('map').innerHTML = map;
+
             // https://en.wikipedia.org/wiki/Australia
             document.getElementById('linkTo').innerHTML =
             `<a href="https://en.wikipedia.org/wiki/${name}">Learn More </a>`;
-            console.log(capital, subContinent, officialName, languages, population);
+            console.log(capital, subContinent, officialName, languages, population,area,time,map);
             console.log(data);
         } catch (error) {
             console.error('Error:', error);

@@ -33,33 +33,49 @@
     <main class="container mx-auto">
         <section class="flex justify-center items-center mt-3 p-3 sm:mt-12 sm:p-10">
             <!-- main div -->
-            <div class="p-3 text-center items-center bg-gray-100 sm:p-10">
-                <div class="flex space-x-5 pb-5 items-center">
+            <div class="p-3 text-center items-center bg-gray-100 sm:p-10" style="background-image: url(majestic-mountain-peak-tranquil-meadow-panoramic-landscape-generated-by-ai.jpg); background-position: center; -webkit-background-composite: inherit;">
+                <div class="flex space-x-5 pb-5 items-center ">
                     <input type="text" id="search" class="p-2 rounded-lg sm:p-4">
                     <button id="search-btn" class="btn btn-ghost">Search</button>
                 </div>
-                <div id="image-container" class="text-center flex justify-center" ></div>
-                <h1 id="name" class="text-[14px] font-bold pt-2 pb-1 sm:text-[18px]"></h1>
-                <h1 id="official-name" class="text-[13px] font-medium pb-3 sm:text-[17px]"></h1>
-                <div class="text-left">
+                <div id="image-container" class="text-center flex justify-center text-white" ></div>
+                <h1 id="name" class="text-[14px] font-bold pt-2 pb-1 sm:text-[18px] text-white"></h1>
+                <h1 id="official-name" class="text-[13px] font-medium pb-3 sm:text-[17px] text-white"></h1>
+                <div class="text-left text-white">
                     <div class="flex space-x-1 sm:space-x-4">
                         <h1 class="font-medium">Capital : </h1>
                         <h1 id="capital"></h1>
                     </div>
-                    <div class="flex space-x-1 sm:space-x-4">
+                    <div class="flex space-x-1 sm:space-x-4 text-white">
                         <h1 class="font-medium">Continent : </h1>
                         <h1 id="sub-continent"></h1>
                     </div>
-                    <div class="flex space-x-1 sm:space-x-4">
+                    <div class="flex space-x-1 sm:space-x-4 text-white">
                         <h1 class="font-medium">Language : </h1>
                         <h1 id="language"></h1>
                     </div>
-                    <div class="flex space-x-1 sm:space-x-4">
+                    <div class="flex space-x-1 sm:space-x-4 text-white">
                         <h1 class="font-medium">Population in number :</h1>
                         <h1 class="text-right" id="population"></h1>
                     </div>
+                    <div class="flex space-x-1 sm:space-x-4 text-white">
+                        <h1 class="font-medium">Total Land Area (km <sup>2</sup> ) :</h1>
+                        <h1 class="text-right" id="area"></h1>
+                    </div>
+                    <div class="flex space-x-1 sm:space-x-4 text-white">
+                        <h1 class="font-medium">Time Zone :</h1>
+                        <h1 class="text-right" id="time"></h1>
+                    </div>
+                    <div class="flex space-x-1 sm:space-x-4 text-white">
+                        <h1 class="font-medium">Currency :</h1>
+                        <h1 class="text-right" id="currency"></h1>
+                    </div>
+                    <div class="flex space-x-1 sm:space-x-4 text-white">
+                        <h1 class="font-medium">Google Map Address :  </h1>
+                        <h1 class="text-right" id="map"></h1>
+                    </div>
                     <div>
-                        <h1 id="linkTo" class="link link-primary"></h1>
+                        <h1 id="linkTo" class="link link-primary" ></h1>
                     </div>
                 </div>
             </div>

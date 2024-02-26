@@ -94,23 +94,28 @@ async function getCountry() {
 getCountry();
 
 
-async function getData(){
-    const url = 'https://covid1910.p.rapidapi.com/data/confirmed/country/us&canada/date/03-02-2020&04-02-2020';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '3364f5819cmshdc774a8a9bd9937p177305jsn54ae4673901d',
-		'X-RapidAPI-Host': 'covid1910.p.rapidapi.com'
-	}
-};
+// async function getData(){
+//     const url = 'https://covid1910.p.rapidapi.com/data/confirmed/country/us&canada/date/03-02-2020&04-02-2020';
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': '3364f5819cmshdc774a8a9bd9937p177305jsn54ae4673901d',
+// 		'X-RapidAPI-Host': 'covid1910.p.rapidapi.com'
+// 	}
+// };
 
-try {
-	const response = await fetch(url, options);
-	const result = await response.text();
-	console.log(result);
-} catch (error) {
-	console.error(error);
-}
-}
+// try {
+// 	const response = await fetch(url, options);
+// 	const result = await response.text();
+// 	console.log(result);
+// } catch (error) {
+// 	console.error(error);
+// }
+// }
 
-getData();
+// getData();
+
+// function hello(eleID){
+//     const n = data[0].name.common;
+//     document.getElementById('eleID').innerText = n;
+// }
